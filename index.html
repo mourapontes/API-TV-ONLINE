@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBT e Band Streaming API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Canais Ao Vivo - Streaming API</h1>
+    </header>
+    <div class="container">
+        <p>Assista ao conteúdo ao vivo nos players abaixo:</p>
+        <div class="player">
+            <h2>SBT</h2>
+            <iframe id="sbt-player" src="https://youtube-player.sbt.com.br/?videoID=ABVQXgr2LW4&t=0&adunit=/1011235/SBT_Videos/Especiais/SBT_Live/video" allowfullscreen></iframe>
+            <div class="controls">
+                <input type="text" id="sbt-videoID" placeholder="Insira o novo videoID do SBT">
+                <button onclick="updatePlayer('sbt')">Atualizar Player SBT</button>
+            </div>
+        </div>
+        <div class="player">
+            <h2>Band</h2>
+            <iframe id="band-player" src="https://band.com.br/band-placar/futebol/uefa-europa-league-1559/as-roma-x-sc-braga-5668324" allowfullscreen></iframe>
+            <div class="controls">
+                <input type="text" id="band-url" placeholder="Insira o novo URL do Band">
+                <button onclick="updatePlayer('band')">Atualizar Player Band</button>
+            </div>
+        </div>
+        <p class="footer">Conteúdo fornecido pelas emissoras. © Todos os direitos reservados.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
