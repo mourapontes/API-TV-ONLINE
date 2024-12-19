@@ -1,10 +1,9 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SBT e Band Streaming API</title>
+    <title>SBT, Band, Canção Nova, TV Aparecida e TV Gazeta Streaming API</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,6 +27,27 @@
                 <input type="text" id="band-url" placeholder="Insira o novo URL do Band">
                 <button onclick="updatePlayer('band')">Atualizar Player Band</button>
             </div>
+        </div>
+        <div class="player">
+            <h2>Canção Nova</h2>
+            <iframe id="cancao-nova-player" src="https://www.youtube.com/embed/GFqJpTeZiYc" allowfullscreen></iframe>
+            <div class="controls">
+                <input type="text" id="cancao-nova-url" placeholder="Insira o novo URL do Canção Nova">
+                <button onclick="updatePlayer('cancao-nova')">Atualizar Player Canção Nova</button>
+            </div>
+        </div>
+        <div class="player">
+            <h2>TV Aparecida</h2>
+            <iframe id="tv-aparecida-player" src="https://www.youtube.com/embed/ha-Ag0lQmN0" allowfullscreen></iframe>
+            <div class="controls">
+                <input type="text" id="tv-aparecida-url" placeholder="Insira o novo URL da TV Aparecida">
+                <button onclick="updatePlayer('tv-aparecida')">Atualizar Player TV Aparecida</button>
+            </div>
+        </div>
+        <div class="player">
+            <h2>TV Gazeta</h2>
+            <p>Clique no botão abaixo para assistir ao vivo no site oficial:</p>
+            <a href="https://www.tvgazeta.com.br/aovivo/" target="_blank" class="button">Assistir TV Gazeta</a>
         </div>
         <p class="footer">Conteúdo fornecido pelas emissoras. © Todos os direitos reservados.</p>
     </div>
